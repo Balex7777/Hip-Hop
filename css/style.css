@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0;
     font-family: 'Roboto', sans-serif;
@@ -15,12 +19,11 @@ body{
 .header{
     
     width:100%;
-    height: 500px;
     justify-content: center;
     
 }
 .blok1{
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     margin: auto;
 }
@@ -82,7 +85,9 @@ body{
 .blok6{
     background-color:#F0F54B;
     width: 67%;
-    padding: 0px 55px 0px 30px;
+    padding: 0px 20px 0px 30px;
+    display: flex;
+    align-items: center;
 }
 .text2{
     font-size:30px;
@@ -104,7 +109,6 @@ body{
 }
 .blok8{
     width: 1170px;
-    height: 600px;
     display: flex;
     margin: 30px auto ;
         
@@ -122,7 +126,7 @@ body{
     background-color:#fff; 
 }
 .blok11{
-    height: 260px;
+    height: 300px;
     padding: 20px 35px;
 }
 .kartinka1{
@@ -166,7 +170,8 @@ body{
     margin: 100px 0px 30px;
 }
 .blokBAN{
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     margin: auto;
 }
 .blok12{
@@ -181,7 +186,7 @@ body{
     background-image: url("image/cool_team%20(1).jpg");
 }
 .blok13{
-    height:230px;
+    height:270px;
     width: 390px;
     background-color: #fff;
     padding: 20px 35px;
@@ -374,4 +379,72 @@ a{
 }
 a:hover{
     color:#e7567f;
+}
+
+@media(max-width: 1260px){
+    .blok18{
+        padding-left: 40px;
+    }
+    .blok1{
+        width: auto;
+        display: block;
+        margin: auto;
+        width: 680px;
+    }
+    .blok8{
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .blok9{
+        display: flex;
+        width: 700px;
+        margin: 20px auto;
+        height: 270px;
+    }
+    .blok10{
+        display: flex;
+        width: 700px;
+        margin: auto;
+        height: 270px;
+    }
+    .kartinka1, .kartinka2, .kartinka3, .kartinka4{
+        width: 270px;
+        height: 270px;
+        background-position: center;
+        background-size: cover;
+    }
+    .blok11, .blok13{
+        height: 270px;
+        width: 430px;
+    }
+    .blok12{
+        width: 700px;
+        margin: auto;
+    }
+    .zagolovok6, .zagolovok3, .zagolovok7{
+        margin: 100px 0 20px 40px
+    }
+    .blok7{
+        display: block;
+        width: 100%;
+    }
+    .blok4{
+        margin: 30px auto;
+    }
+    .blok15, .blok7, .blok3, .blok14, .blok20{
+        display: block;
+        width: 100%;
+    }
+    .blok16, .blok17, .blok18{
+        width: 100%;
+    }
+    .footer1, .footer2, .footer3{
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+    .logo{
+        margin-left: 470px;
+    }
 }
