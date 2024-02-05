@@ -192,14 +192,18 @@ body{
 }
 .blok15{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .blok16{
     width: 1170px;
     display: flex;
     margin-top: 25px;
+    align-items: center;
+    justify-content: center;
 }
 .text6{
-    width: 340px;
+    width: 390px;
     height: 270px;
     background-color: #fff;
     font-size: 20px;
@@ -237,8 +241,8 @@ cite{
     width: 1170px;
     display: flex;
     margin-top: 25px;
-    margin-left: -100px;
-    
+    justify-content: center;
+    align-items: center;
 }
 blockquote{
     height: 230px;
@@ -247,7 +251,9 @@ blockquote{
 }
 .kartinka9{
     background-image: url("image/parallax1.jpg");
-    background-position: 30% 10%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 720px;
     width: 100%;
 }
@@ -291,18 +297,23 @@ blockquote{
     text-align: center;
 }
 .button1{
+    transition: .3s;
+    cursor: pointer;
     width: 160px;
     background-color: #d91d52;
     display: table-cell;
 	vertical-align	: middle;
-    margin-top: 25px
-    
+    margin-top: 25px;
+    border:none;
+}
+.button1:hover{
+    background-color: #e7567f;
 }
 .wrapper{
 	display:table;
 }
 .footer{
-    background-color: Цвет: #18171B;
+    background-color: #18171B;
 }
 .zagolovok7{
     font-size: 60px;
@@ -357,4 +368,10 @@ blockquote{
     line-height:25px ;
     font-weight: normal;
     text-align: right;
+}
+a{
+    transition: .3s;
+}
+a:hover{
+    color:#e7567f;
 }
